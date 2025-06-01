@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mohamed Montasser Abd-ELwahab | Portfolio</title>
+  <meta name="description" content="Mechatronics Engineer | AI & Robotics | Embedded Systems">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      background: linear-gradient(135deg, #e0e7ff 0%, #f3e8ff 100%);
+      min-height: 100vh;
+    }
+    .navbar {
+      background: rgba(31, 41, 55, 0.95) !important;
+    }
+    .navbar-brand, .nav-link, .navbar-toggler {
+      color: #fff !important;
+    }
+    .nav-link.active {
+      color: #60a5fa !important;
+      font-weight: bold;
+    }
+    .hero {
+      background: linear-gradient(135deg, #3730a3 0%, #a21caf 100%);
+      color: #fff;
+      padding: 80px 0 40px 0;
+      text-align: center;
+    }
+    .hero h1 span {
+      color: #fde047;
+    }
+    .section-title {
+      font-weight: bold;
+      color: #3730a3;
+      margin-bottom: 1.5rem;
+      letter-spacing: 1px;
+    }
+    .card {
+      border: none;
+      border-radius: 1rem;
+      box-shadow: 0 4px 24px 0 rgba(55,48,163,0.08);
+      transition: transform 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-5px) scale(1.03);
+      box-shadow: 0 8px 32px 0 rgba(55,48,163,0.18);
+    }
+    .skill-bar {
+      height: 1rem;
+      border-radius: 0.5rem;
+      background: #ddd;
+      overflow: hidden;
+      margin-bottom: 0.5rem;
+    }
+    .skill-bar-inner {
+      height: 100%;
+      background: linear-gradient(90deg, #60a5fa 0%, #a21caf 100%);
+      border-radius: 0.5rem;
+      transition: width 1s;
+    }
+    .project-links a {
+      color: #3730a3;
+      margin-right: 0.5rem;
+      font-size: 1.2rem;
+    }
+    .project-links a:hover {
+      color: #a21caf;
+    }
+    .timeline {
+      border-left: 3px solid #a21caf;
+      padding-left: 1.5rem;
+      margin-left: 1rem;
+    }
+    .timeline-event {
+      position: relative;
+      margin-bottom: 2rem;
+    }
+    .timeline-event:before {
+      content: '';
+      position: absolute;
+      left: -1.75rem;
+      top: 0.2rem;
+      width: 1.2rem;
+      height: 1.2rem;
+      background: #a21caf;
+      border-radius: 50%;
+      border: 3px solid #fff;
+      z-index: 1;
+    }
+    .contact-icon {
+      color: #a21caf;
+      font-size: 2rem;
+      margin-right: 0.5rem;
+    }
+    .footer {
+      background: #3730a3;
+      color: #fff;
+      padding: 1.5rem 0 0.5rem 0;
+      margin-top: 3rem;
+      text-align: center;
+      border-top-left-radius: 2rem;
+      border-top-right-radius: 2rem;
+    }
+    .lang-badge {
+      background: #f3e8ff;
+      color: #a21caf;
+      margin-right: 0.5rem;
+      padding: 0.3em 0.7em;
+      border-radius: 1em;
+      font-size: 0.95em;
+    }
+    @media (max-width: 767px) {
+      .hero { padding: 40px 0 20px 0; }
+      .section-title { font-size: 1.4rem; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg sticky-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Mohamed Montasser</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#volunteer">Volunteer</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <h1 class="display-4 mb-3 animate__animated animate__fadeInDown">
+        Hi, I'm <span>Mohamed Montasser</span>
+      </h1>
+      <p class="lead mb-4">Mechatronics Engineer | AI & Robotics | Embedded Systems</p>
+      <div class="mb-4">
+        <a href="#projects" class="btn btn-warning btn-lg mx-2 shadow-sm">View My Work</a>
+        <a href="mailto:m.montasser.elazab@gmail.com" class="btn btn-outline-light btn-lg mx-2 shadow-sm">Contact Me</a>
+      </div>
+      <div>
+        <a href="https://github.com/Mohamed-Montasser" class="me-2" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+        <a href="https://www.linkedin.com/in/mohamed-montasser-/" class="me-2" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+        <a href="tel:+201128727717" class="me-2"><i class="fas fa-phone fa-2x"></i></a>
+        <a href="mailto:m.montasser.elazab@gmail.com"><i class="fas fa-envelope fa-2x"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="py-5" id="about">
+    <div class="container">
+      <h2 class="section-title text-center">About Me</h2>
+      <div class="row align-items-center">
+        <div class="col-md-8 mx-auto">
+          <div class="card p-4 mb-3">
+            <p class="mb-2">
+              Mechatronics Engineering student at Ain Shams University with a focus on robotics, AI, and embedded systems. Skilled in Python, Java, C++, Embedded C, MATLAB, and Simulink, as well as machine learning frameworks like TensorFlow and PyTorch. Experienced in design software such as SolidWorks, Autodesk Inventor, EasyEDA, and Altium Designer. Proficient in numerical solvers like ANSYS APDL and Proteus, and well versed in microcontroller platforms including ARM Cortex M3, ESP32, and Arduino.
+            </p>
+            <ul class="list-unstyled mb-0">
+              <li><b>Location:</b> Cairo, Egypt</li>
+              <li><b>Email:</b> <a href="mailto:m.montasser.elazab@gmail.com">m.montasser.elazab@gmail.com</a></li>
+              <li><b>Phone:</b> <a href="tel:+201128727717">+201128727717</a></li>
+              <li><b>LinkedIn:</b> <a href="https://www.linkedin.com/in/mohamed-montasser-/" target="_blank">linkedin.com/in/mohamed-montasser-</a></li>
+              <li><b>GitHub:</b> <a href="https://github.com/Mohamed-Montasser" target="_blank">github.com/Mohamed-Montasser</a></li>
+              <li><b>Education:</b> Mechatronics Engineering, Ain Shams University (2021 – present)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="py-5" id="skills">
+    <div class="container">
+      <h2 class="section-title text-center">Skills</h2>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="card p-3">
+            <h5><i class="fas fa-code me-2"></i>Programming</h5>
+            <span class="lang-badge">Python</span>
+            <span class="lang-badge">Java</span>
+            <span class="lang-badge">C++</span>
+            <span class="lang-badge">Embedded C</span>
+            <span class="lang-badge">MATLAB</span>
+            <span class="lang-badge">Simulink</span>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card p-3">
+            <h5><i class="fas fa-robot me-2"></i>Machine Learning & AI</h5>
+            <span class="lang-badge">TensorFlow</span>
+            <span class="lang-badge">PyTorch</span>
+            <span class="lang-badge">scikit-learn</span>
+            <span class="lang-badge">OpenCV</span>
+            <span class="lang-badge">Matplotlib</span>
+            <span class="lang-badge">NumPy</span>
+            <span class="lang-badge">Pandas</span>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card p-3">
+            <h5><i class="fas fa-language me-2"></i>Natural Language Processing</h5>
+            <span class="lang-badge">NLTK</span>
+            <span class="lang-badge">SpaCy</span>
+            <span class="lang-badge">Transformers</span>
+            <span class="lang-badge">Hugging Face</span>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card p-3">
+            <h5><i class="fas fa-cogs me-2"></i>Design & Simulation Tools</h5>
+            <span class="lang-badge">SolidWorks</span>
+            <span class="lang-badge">Autodesk Inventor</span>
+            <span class="lang-badge">EasyEDA</span>
+            <span class="lang-badge">Altium</span>
+            <span class="lang-badge">ANSYS APDL</span>
+            <span class="lang-badge">Proteus</span>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card p-3">
+            <h5><i class="fas fa-microchip me-2"></i>Microcontrollers</h5>
+            <span class="lang-badge">ARM Cortex M3 (STM32F103C8T6)</span>
+            <span class="lang-badge">ESP32</span>
+            <span class="lang-badge">Arduino</span>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card p-3">
+            <h5><i class="fas fa-user-friends me-2"></i>Soft Skills</h5>
+            <span class="lang-badge">Adaptability</span>
+            <span class="lang-badge">Communication</span>
+            <span class="lang-badge">Critical thinking</span>
+            <span class="lang-badge">Problem solving</span>
+            <span class="lang-badge">Teamwork</span>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="card p-3">
+            <h5><i class="fas fa-globe me-2"></i>Languages</h5>
+            <span class="lang-badge">Arabic (Mother Tongue)</span>
+            <span class="lang-badge">English (B1)</span>
+            <span class="lang-badge">German (A1)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="py-5" id="projects">
+    <div class="container">
+      <h2 class="section-title text-center">Projects</h2>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 p-3">
+            <h5 class="mb-2"><i class="fas fa-hotel me-2"></i>Hotel Booking System</h5>
+            <p>JavaFX app with Admin/Customer roles, room/user management, date validation, discounts, sorting/filtering, and real-time GUI updates. Implements OOP principles and JUnit 4 testing.</p>
+            <div class="project-links">
+              <a href="https://github.com/Mohamed-Montasser/Hotel-booking-system" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 p-3">
+            <h5 class="mb-2"><i class="fas fa-robot me-2"></i>Visual Inspection Robot</h5>
+            <p>ESP32-based stationary robot with camera end-effector for real-time inspection. Features mechanical/electrical design, actuator sizing, PID control, and modular software. Simulates industrial inspection.</p>
+            <div class="project-links">
+              <a href="https://github.com/Mohamed-Montasser/Robotic-Inspection-System" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 p-3">
+            <h5 class="mb-2"><i class="fas fa-user-check me-2"></i>Real-Time Attendance System</h5>
+            <p>Face recognition system using OpenCV and LBPH algorithm. Tkinter GUI, robust to lighting/angles, practical for security, education, and robotics. Captures, processes, and recognizes faces efficiently.</p>
+            <div class="project-links">
+              <a href="https://github.com/Mohamed-Montasser/Face-Recognition" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 p-3">
+            <h5 class="mb-2"><i class="fas fa-plane me-2"></i>Remote Controlled Aircraft</h5>
+            <p>Horus-777 aircraft for 2024 AIAA DBF: flight speed, payload, endurance, quick assembly. Used sensitivity analysis, aerodynamic modeling, simulation, flight testing, and PID control.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 p-3">
+            <h5 class="mb-2"><i class="fas fa-tachometer-alt me-2"></i>Analog PID Motor Controller</h5>
+            <p>PID control circuit with op-amps and filtering for precise control (e.g., motor positioning). Modeled in MATLAB/Simulink, simulated in LTspice, validated with Arduino DAQ.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 p-3">
+            <h5 class="mb-2"><i class="fas fa-car me-2"></i>Batmobile Robot</h5>
+            <p>Differential-drive robot for line following, target shooting, and high-speed sections. Integrated mechanical, electrical, and control systems for competition performance.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section class="py-5" id="experience">
+    <div class="container">
+      <h2 class="section-title text-center">Experience</h2>
+      <div class="timeline">
+        <div class="timeline-event">
+          <h5>Mechanical Engineer Intern, Cairo Electricity Production Company <small class="text-muted">2023</small></h5>
+          <ul>
+            <li>Studied thermodynamic cycles, power generation, and plant operations.</li>
+            <li>Gained hands-on experience with turbine/compressor maintenance.</li>
+            <li>Learned power plant safety protocols and operational procedures.</li>
+          </ul>
+        </div>
+      </div>
+      <h4 class="section-title mt-5 mb-3">Certifications</h4>
+      <div class="row g-3">
+        <div class="col-md-4"><div class="card p-3">Microsoft Machine Learning Engineer, DEPI</div></div>
+        <div class="col-md-4"><div class="card p-3">Python Essentials, Cisco Networking Academy</div></div>
+        <div class="col-md-4"><div class="card p-3">Java Foundation, Infosys</div></div>
+        <div class="col-md-4"><div class="card p-3">AI Career Essentials, ALX</div></div>
+        <div class="col-md-4"><div class="card p-3">McKinsey Forward program</div></div>
+        <div class="col-md-4"><div class="card p-3">PCB design, Udemy</div></div>
+        <div class="col-md-4"><div class="card p-3">Mechanical Design via SolidWorks, Udemy</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Volunteer -->
+  <section class="py-5" id="volunteer">
+    <div class="container">
+      <h2 class="section-title text-center">Volunteer Experience</h2>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="card p-3">
+            <h6 class="mb-1"><i class="fas fa-robot me-2"></i>STP, Robotics Member</h6>
+            <span class="text-muted">2025</span>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card p-3">
+            <h6 class="mb-1"><i class="fas fa-boxes me-2"></i>STP, Logistics Member</h6>
+            <span class="text-muted">2025</span>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card p-3">
+            <h6 class="mb-1"><i class="fas fa-plane me-2"></i>Aero ASU, Flight Control Member</h6>
+            <span class="text-muted">2024</span>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card p-3">
+            <h6 class="mb-1"><i class="fas fa-bullhorn me-2"></i>Semicolon, PR</h6>
+            <span class="text-muted">2023</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="py-5" id="contact">
+    <div class="container">
+      <h2 class="section-title text-center">Contact</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-7">
+          <div class="card p-4 mb-3">
+            <form action="mailto:m.montasser.elazab@gmail.com" method="POST" enctype="text/plain">
+              <div class="mb-3">
+                <label for="name" class="form-label">Your Name</label>
+                <input type="text" name="name" class="form-control" required>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Your Email</label>
+                <input type="email" name="email" class="form-control" required>
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea name="message" rows="4" class="form-control" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary w-100">Send Message</button>
+            </form>
+          </div>
+          <div class="text-center">
+            <a href="mailto:m.montasser.elazab@gmail.com" class="contact-icon"><i class="fas fa-envelope"></i></a>
+            <a href="https://github.com/Mohamed-Montasser" class="contact-icon" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/mohamed-montasser-/" class="contact-icon" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="tel:+201128727717" class="contact-icon"><i class="fas fa-phone"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div>
+      &copy; 2025 Mohamed Montasser Abd-ELwahab. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
